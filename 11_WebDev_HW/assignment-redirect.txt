@@ -1,0 +1,5 @@
+See separate repository for this assignment: 
+https://github.com/sofiacavallo/CitiesVsWeather
+
+And website: 
+https://sofiacavallo.github.io/CitiesVsWeather/
