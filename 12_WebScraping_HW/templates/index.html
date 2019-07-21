@@ -38,7 +38,7 @@
         <div class="card">
           <div class="card-body">
             <h4>Current Weather on Mars</h4>
-            <p>{{mars_data}}</p>
+            <p>{{ mars_data['mars_weather_text'] }}</p>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
         <div class="card">
           <div class="card-body">
             <h4>Mars Facts</h4>
-            <p>{{mars_data}}</p>
+            <p>{{mars_data ['marsfacts_table']}}</p>
           </div>
         </div>
       </div>
@@ -60,6 +60,7 @@
       <h2 style="text-align: center"> Mars Hemispheres</h2>
       <hr>
       <div class="card-deck">
+        <hr>
         <div class="card">
           <img class="card-img-top" src="" alt="Mars Hemisphere Image 1">
           <div class="card-body">
