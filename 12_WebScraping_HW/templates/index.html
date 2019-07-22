@@ -52,41 +52,76 @@
           </div>
         </div>
       </div>
-
     </div> <!--CLOSE CONTAINER FEATURED IMAGE, WEATHER CARD< & FACTS TABLE-->
         
-    <!-- CARD DECK MARS HEMISPHERE CARDS -->
+    <!-- MARS HEMISPHERE IMAGES -->
     <div class="container-fluid">
       <h2 style="text-align: center"> Mars Hemispheres</h2>
       <hr>
-      <div class="card-deck">
-        <hr>
-        <div class="card">
-          <img class="card-img-top" src="" alt="Mars Hemisphere Image 1">
+        <div class="row">         
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <a href="{{ mars_hemispheres_imgs[0].img_url }}" class="thumbnail">
+              <img src="{{ mars_hemispheres_imgs[0].img_url }}" alt="">
+              <h4 style="text-align: center">{{mars_hemispheres_imgs[0].title}}</h4>
+            </a>
+          </div>
+        <!--     
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <a href="{{dict['mars_hemispheres_imgs'][1]['img_url']}}" class="thumbnail">
+              <img src="{{dict['mars_hemispheres_imgs'][1]['img_url']}}" alt="">
+              <h4 style="text-align: center">{{dict.mars_hemispheres_imgs[1].title}}</h4>
+            </a>
+          </div>
+
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <a href="{{dict['mars_hemispheres_imgs'][2]['img_url']}}" class="thumbnail">
+              <img src="{{dict['mars_hemispheres_imgs'][2]['img_url']}}" alt="">
+              <h4 style="text-align: center">{{dict.mars_hemispheres_imgs[2].title}}</h4>
+            </a>
+          </div>
+
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <a href="{{dict['mars_hemispheres_imgs'][3]['img_url']}}" class="thumbnail">
+              <img src="{{dict['mars_hemispheres_imgs'][3]['img_url']}}" alt="">
+              <h4 style="text-align: center">{{dict.mars_hemispheres_imgs[3].title}}</h4>
+            </a>
+          </div>
+        </div> 
+      -->
+
+
+      <!--<div class="card-deck">
+         <div class="card">
+          <img class="card-img-top" src="" alt="Mars Hemisphere Image 1"> 
+          <img class="card-img-top" src="{{mars_hemispheres_imgs.img_url.[0]}}">
+
+
+
+
           <div class="card-body">
-            <!-- <h5 class="card-title">{{'Card title'}}</h5> -->
+          <h5 class="card-title">{{ mars_hemispheres_imgs.title.[0] }}</h5>
           </div>
         </div>
         <div class="card">
           <img class="card-img-top" src="" alt="Mars Hemisphere Image 2">
           <div class="card-body">
-            <!-- <h5 class="card-title">{{'Card title'}}</h5> -->
+           <h5 class="card-title">{{'Card title'}}</h5> 
           </div>
         </div>
         <div class="card">
           <img class="card-img-top" src="" alt="Mars Hemisphere Image 3">
           <div class="card-body">
-            <!-- <h5 class="card-title">{{'Card title'}}</h5> -->
+             <h5 class="card-title">{{'Card title'}}</h5> 
           </div>
         <div class="card">
             <img class="card-img-top" src="" alt="Mars Hemisphere Image 4">
             <div class="card-body">
-              <!-- <h5 class="card-title">{{'Card title'}}</h5> -->
+              <h5 class="card-title">{{'Card title'}}</h5> 
             </div>
         </div>
       </div>
     </div>
-  </div>  
+  </div>  -->
 
   <!-- BOOTSTRAP JAVASCRIPT-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
