@@ -11,7 +11,6 @@
 
 <body>
   <div class="container-fluid">
-
     <!-- JUMBOTRON CONTAINER--> 
     <div class="jumbotron text-center">
       <h1>Mission to Mars</h1>
@@ -20,9 +19,11 @@
     
     <!-- LATEST NEWS CONTAINER-->
     <div class="container-fluid">
-      <h2>Latest Mars News</h2>
-      <h3>{{ mars_data['news_title'] }}</h3>
-      <p> {{ mars_data['news_teaser'] }}</p>
+      <div class="col-lg-8 col-md-8 col-sm-12">
+        <h2>Latest Mars News</h2>
+        <h3>{{ mars_data['news_title'] }}</h3>
+        <p> {{ mars_data['news_teaser'] }}</p>
+      </div>
     </div>
 
     <!-- CONTAINER FEATURED IMAGE, WEATHER CARD & FACTS TABLE -->
@@ -48,7 +49,7 @@
         <div class="card">
           <div class="card-body">
             <h4>Mars Facts</h4>
-            <p>{{ mars_data['marsfacts_table'] }}</p>
+            {{ mars_data['marsfacts_table'] | safe}}
           </div>
         </div>
       </div>
@@ -58,25 +59,20 @@
     <div class="container-fluid">
       <h2 style="text-align: center"> Mars Hemispheres</h2>
       <hr>
-
             {% for items in mars_data.mars_hemispheres_imgs %}
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-              <div class="card" style="width: 20rem;">
+              <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">{{items.title}}</h4>
                     <a href="{{ items.img_url }}" class="thumbnail">
                         <img src="{{ items.img_url }}" alt="{{ items.title }}">
+                        <h4 class="card-title">{{items.title}}</h4>
                     </a>
-                    <h6 class="card-subtitle mb-2 text-muted">{{mars_data.title}}</h6>
                   </div>
-                </div>
+              </div>
             </div>
-  
             {% endfor %}
       </div>
-          
-
-  </div>  -->
+  </div>
   </div>
   <!-- BOOTSTRAP JAVASCRIPT-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
