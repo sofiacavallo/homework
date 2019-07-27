@@ -35,7 +35,7 @@ def scrape():
 
     # use the scraping file
     scraped_data = mars_scrape.mars_scrape()
-    print(scraped_data)
+    # print(scraped_data)
 
     # Update the Mongo database using update and upsert=True
     mongo.db.mars_collection.update({}, scraped_data, upsert=True)
